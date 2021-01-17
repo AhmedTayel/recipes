@@ -38,13 +38,16 @@ ActiveRecord::Schema.define(version: 2020_12_29_131742) do
   end
 
   create_table "instructions", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "recipe_id"
     t.integer "order"
-    t.string "action"
+    t.text "action"
+    t.index ["recipe_id"], name: "index_instructions_on_recipe_id"
   end
 
   create_table "recipes", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title"
-    t.string "description"
+    t.text "description"
+    t.string "URL"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

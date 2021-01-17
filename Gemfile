@@ -22,11 +22,16 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# For pagination
+gem 'kaminari'
 # Use to parse JSON 
 gem 'json', '~> 2.5.1'
 
 # Use to parse HTML
 gem 'nokogiri', '~> 1.10.10'
+
+# Use to style HTML files
+gem 'bootstrap', '~> 5.0.0.beta1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

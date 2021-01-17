@@ -4,7 +4,7 @@ class Ingredient < ApplicationRecord
 
   attr_accessor :ingredient_token, :length
   #Initializes an instance thats takes an entry from the ingredients as a string and tokenizes it
-  def self.newInstance ingredient_string
+  def self.new_instance ingredient_string
     ingredient = self.new
     ingredient.ingredient_token = ingredient_string.split(" ")
     ingredient.length =  ingredient.ingredient_token.length

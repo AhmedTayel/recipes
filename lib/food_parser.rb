@@ -3,9 +3,6 @@ require 'json'
 class FoodParser
 
   def self.load
-    
-
-    
     begin
       c = JSON.load(File.read('./Food.json'))
     rescue

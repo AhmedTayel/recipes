@@ -1,0 +1,21 @@
+<br>
+<div class="container">
+  <h1><%= @recipe.title %></h1>
+  <p><%= @recipe.description %></p>
+</div>
+<div class="container">
+<h2>Ingredients</h2>
+  <ul class="">
+  <% @recipe.ingredients.each do |ingredient| %>
+  <li><%= RecipesIngredient.find_by(ingredient_id: "#{ingredient.id}").quantity %> <%=ingredient.name%></li>
+  <%end%>
+  </ul>
+<div class="container">
+  <h2>Instructions</h2>
+  <ol>
+    <% @recipe.instructions.each do |instruction|%>
+    <li><%= instruction.action %></li>
+    <%end%>
+  </ol>
+</div>
+</div>

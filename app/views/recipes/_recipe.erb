@@ -1,0 +1,12 @@
+        <div class="col-lg-4 col-md-6 col-sm-12 m-0 p-0" >
+          <div class="card" style="margin:8px 8px;height: 310px;">
+              <div class="card-body">
+                  <h5 class="card-title"><%= recipe.title %></h5>
+                  <p class="card-text"><%= recipe.description %></p>
+                  <div style="display:flex;">
+                  <a href="../recipes/<%=recipe.id%>" class="btn btn-primary" >More details</a>
+                  <%= button_to "Delete", {  action: "delete", id: recipe.id, method: :delete }, {class:'btn btn-danger'}%>
+                  </div>
+              </div>
+          </div>
+        </div>

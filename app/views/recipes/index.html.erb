@@ -1,0 +1,27 @@
+
+
+<div class="container-fluid">
+  <div class="row">
+  
+    <%= render @recipes %>
+   </div>
+   <%= paginate @recipes %>
+</div>
+
+<!--
+<div class="flex-cont">
+ <% @recipes.each do |recipe|  %>
+    <div class="contaa">
+      <div class="card" style="width: 18rem;margin:10px;">
+          <div class="card-body">
+              <h5 class="card-title"><%= recipe.title %></h5>
+              <p class="card-text"><%= recipe.description %></p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+      </div>
+   </div>
+  <% end %>
+</div>  -->
+ 
+
+
