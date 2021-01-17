@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is in still in development. 
 
-Things you may want to cover:
+* Uses mysql for a relational database model.
 
-* Ruby version
+Copy and paste any recipe URL from allrecipes.com into new and it the recipe should be added to the databse and viewed with all ingredients and instructions in its own page.
 
-* System dependencies
+* Views are rendered at the serverside.
 
-* Configuration
 
-* Database creation
+To start the app, cd into the folder and create the database using ```rails db:create```, then migrate ```rails db:migrate```, you can seed 
+the recipe database with dummy recipes using ```rails db:seed```.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run ```rails server``` to run the app and go to the hosted server at '/recipes'.
